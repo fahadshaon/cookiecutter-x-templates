@@ -1,0 +1,13 @@
+name: cpp
+description: Generate CPP and H with include protection
+
+variables:
+  class_name:
+    required: true
+    type: string
+
+files:
+  - name: cpp.cpp
+    output: "{{ class_name | remove_extension }}.cpp"
+  - name: cpp.h
+    output: "{{ class_name | remove_extension }}.h"

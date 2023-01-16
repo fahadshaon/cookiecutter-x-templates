@@ -1,0 +1,8 @@
+name: gradle_library
+description: Create java library managed with gradle
+post_gen: |
+  - Generate gradle wrapper by running
+
+      gradle wrapper
+
+  ** If the project is a subproject then might need to remove the settings.gradle **

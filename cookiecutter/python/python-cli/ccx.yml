@@ -1,0 +1,6 @@
+name: python-cli
+description: Create python package for creating CLI using click library
+post_gen: |
+  - Based on <https://github.com/pypa/sampleproject>
+  - Pay attention to all the attributes in `setup.py`
+  - License is set to Apache2

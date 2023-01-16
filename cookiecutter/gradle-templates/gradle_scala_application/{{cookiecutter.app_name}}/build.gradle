@@ -1,0 +1,32 @@
+plugins {
+    id 'scala'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    scalaLangVersion = '2.12.12'
+    scalaLangSuffix = '2.12'
+
+    scalacticVersion = '3.0.1'
+    scalaTestVersion = '3.0.1'
+    scalaMockVersion = '4.1.0'
+}
+
+dependencies {
+    implementation("org.scala-lang:scala-library:$scalaLangVersion")
+    implementation("org.scala-lang:scala-compiler:$scalaLangVersion")
+    implementation("org.scalactic:scalactic_$scalaLangSuffix:$scalacticVersion")
+
+    testImplementation("org.scalatest:scalatest_$scalaLangSuffix:$scalaTestVersion")
+    testImplementation("org.scalamock:scalamock_$scalaLangSuffix:$scalaMockVersion")
+
+    testImplementation('junit:junit:4.13')
+}
+
+application {
+    mainClassName = '{{cookiecutter.app_package}}.App'
+}

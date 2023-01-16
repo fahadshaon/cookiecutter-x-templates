@@ -1,0 +1,15 @@
+name: click-cli
+description: Generate python script for building command-line application with the click library
+variables:
+  coloredlogs:
+    required: false
+    default: true
+    type: boolean
+
+  filename:
+    required: true
+    type: string
+
+files:
+  - name: click_script.py
+    output: "{{ filename }}"

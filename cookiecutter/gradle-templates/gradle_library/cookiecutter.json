@@ -1,0 +1,8 @@
+{
+  "app_name": "awesome_app",
+  "app_package": "dev.example.awesome",
+  "app_class_path": "{{ cookiecutter.app_package | java_package_to_dir }}",
+  "_extensions": [
+    "cookiecutter_x.extensions.CCXExtension"
+  ]
+}

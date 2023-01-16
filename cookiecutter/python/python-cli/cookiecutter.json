@@ -1,0 +1,12 @@
+{
+  "app_name": "awesomeness",
+  "module": "{{ cookiecutter.app_name | slugify (separator='_') }}",
+  "version": "0.0.1",
+  "description": "Awesome application",
+  "author": "Awesome Developer",
+  "author_email": "awesome@example.com",
+  "url": "https://github.com/{{cookiecutter.author | slugify }}/{{cookiecutter.app_name | slugify }}",
+  "_extensions": [
+    "cookiecutter_x.extensions.CCXExtension"
+  ]
+}

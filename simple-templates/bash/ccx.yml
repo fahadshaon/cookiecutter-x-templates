@@ -1,0 +1,12 @@
+name: bash
+description: Create a bash script for managing multiple commands
+variables:
+  filename:
+    required: false
+    type: string
+    default: run.sh
+
+files:
+  - name: bash_script.sh
+    output: "{{ filename }}"
+    executable: true
